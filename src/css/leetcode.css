@@ -1,0 +1,301 @@
+html,body {
+    height: 100%;
+    background: white;
+    margin: 0; /* Ensure there's no margin */
+    padding: 0;
+}
+
+.leet-container {
+    min-height: 100vh;
+    background-color: white;
+    padding-bottom: 30px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+t
+.hint-section {
+  margin-top: 2rem;
+}
+
+.centered-camera {
+    display: block;
+    margin: 0 auto;
+}
+
+.circular-progressbar {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    font-size: 1rem; /* Adjust the text size as needed */
+    color: #a8d5a0;
+  }
+
+.search-section {
+    margin-top: 0;  /* Reduce or eliminate margin at the top of the search section */
+    padding-top: 0px;  /* Or adjust padding instead/as well */
+    max-height: 0px;
+}
+
+.search-section, .tts-container {
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.tts-container {
+    background-color: rgb(227, 227, 227);
+    box-shadow: 0 -2px 5px 0px rgba(0, 0, 0, 0.4), /* Top shadow */
+    0 3px 5px 0px rgba(0, 0, 0, 0.4);  /* Bottom shadow */
+}
+
+.audio-container {
+  display: block;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.questionmark-icon {
+  cursor: pointer;
+}
+
+.helpful-hint {
+    background-color: #59cf75;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding: 1.25rem;
+    border-radius: 5px; /* Optional: for rounded corners */
+    width: 70%;
+    margin: auto;
+
+}
+
+.centered-cam {
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+
+.anon-img {
+  width: 25rem;
+  float: left;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+  
+.feedback-container {
+    width: 80%; /* Adjust to your preference */
+    margin: 0 auto; /* Centers the container */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+  
+.ai-feedback-section {
+    width: calc(45% - 10px);
+    margin-left: 50px; /* Add this line */
+    margin-right: 20px;
+}
+  
+  .feedback-section {
+    width: 45%;
+    margin-left: 50px;
+  }
+
+
+  
+  .center-button {
+    text-align: center;
+    margin-top: 20px; /* Optional: adds some space above the button */
+  }
+
+  .webcam-style {
+    width: 20%; /* Adjust the width to your preference */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the webcam horizontally */
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+.lightbulb {
+  cursor: pointer;
+}
+
+.lightbulb:hover {
+  color: rgb(199, 199, 36);
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: adds some space below the buttons */
+}
+
+.button-spacing {
+    margin-right: 30px;
+}
+
+.camera-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.camera-wrapper {
+  margin: 0 auto;
+
+}
+
+.transcript-section {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.record-button {
+  margin-top: 2rem;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.button-common {
+    padding: 5px 15px; /* Adjust padding to make buttons larger */
+    border-radius: 5px; /* Round the corners */
+    font-size: 0.8rem; /* Increase font size */ /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.start-recording,
+.stop-recording {
+    background-color: white;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.start-recording.active {
+    background-color: green;
+}
+
+.start-recording.active + .stop-recording:hover {
+    background-color: red;
+}
+
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.button10 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.button10:hover,
+.button10:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button10:hover {
+  transform: translateY(-1px);
+}
+
+.button10:active {
+  background-color: #F0F0F1;
+  border-color: rgba(227, 207, 207, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+.centered-camera {
+    width: 300px; /* Adjust the width to your preference */
+    height: 300px; /* Adjust the height to your preference */
+    float: left;
+    margin-left: 50px; /* Adjust the margin to your preference */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 10px; /* optional: for some space between the header and the content below */
+}
+
+.loading-bar {
+    position: fixed; /* Fixed position */
+    bottom: 50px; /* 50px from the bottom */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%); /* Centered horizontally */
+    padding: 10px 20px;
+    background-color: #84d096; /* Use the color of your choice */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}

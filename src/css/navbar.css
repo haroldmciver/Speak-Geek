@@ -1,0 +1,100 @@
+.navbar {
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.center-buttons .navbar-button {
+    color: black;
+}
+
+.navbar-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    margin-right: 30px;
+    font-size: 1.1em;
+    position: relative;
+    display: inline-block; 
+}
+
+.navbar-button.behavioral-button, .navbar-button.leetcode-button {
+    background-color: #ffffff;
+}
+
+.login-button {
+    background-color: #28a745; 
+    color: #fff;
+}
+
+/* Opacity change on hover for Get Started button */
+.login-button:hover {
+    opacity: 0.7;
+}
+
+/* Remove the general hover opacity change */
+.navbar-buttons:hover {
+    opacity: 1; /* Reverting the opacity change */
+}
+
+/* Underline animation only for center buttons */
+.center-buttons .navbar-button:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;  /* Adjust the starting position */
+    left: 50%;  
+    width: 0;  
+    height: 2px;
+    background-color: #28a745;
+    transform: translateX(-50%);
+    animation: slideOut 0.5s forwards;  
+}
+
+/* Remove the general hover underline animation */
+.navbar-button:hover::after {
+    content: none; /* Disable the general hover underline animation */
+}
+
+/* Animation definition */
+@keyframes slideOut {
+    0% {
+        bottom: -20px;  /* Ensure starting position is maintained at the beginning of the animation */
+        width: 0;
+    }
+    100% {
+        bottom: 0;  /* Ending position at the bottom of the button */
+        width: 82%;  /* Full width at the end of the animation */
+    }
+}

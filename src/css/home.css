@@ -1,0 +1,283 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white !important;
+}
+
+.home-container {
+    width: 100%;
+    background: rgb(168,213,160);
+    background: radial-gradient(circle, rgba(168,213,160,1) 0%, rgba(196,229,214,1) 74%, rgba(238,247,236,1) 100%);
+    min-height: 100vh; /* Ensure the gradient covers the full viewport height */
+}
+
+.img-container-text {
+    position: absolute;
+    top: 50%;  /* Center the text vertically */
+    left: 25%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Ensures the text is centered regardless of its size */
+    color: #fff; /* Set text color - assuming the gradient is darker so white text will stand out */
+    font-size: 2.5rem; /* Adjust text size */
+    font-weight: bold; /* Optional: make text bold */
+    text-align: center; /* Center align text */
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.paragraph {
+    position: absolute;
+    top: 60%;  /* Center the text vertically */
+    left: 25%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Ensures the text is centered regardless of its size */
+    color: #fff; /* Set text color - assuming the gradient is darker so white text will stand out */
+    font-size: 2rem; /* Adjust text size */
+    text-align: center; /* Center align text */
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;  /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Ensures the text is centered regardless of its size */
+    color: #fff; /* Set text color */
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: bold; /* Optional: make text bold */
+    text-align: center; /* Center align text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.side-image {
+    position: absolute; /* Position the image relative to its nearest positioned ancestor */
+    top: 30%; /* Position the image 40% from the top */
+    right: 10%; /* Position the image 20% from the right */
+    width: 35%; /* Adjust the width to make the image smaller */
+    height: auto;
+    max-height: 100vh; /* Ensure the image doesn't exceed the viewport height */
+    border-radius: 15px; /* Round the corners */
+}
+
+
+.img-container-text {
+    float: left; /* Float the text to the left */
+    width: 50%; /* Adjust the width as needed */
+    /* ... (rest of your styles) ... */
+}
+
+/* Clear the float after the image and text */
+.image-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.confidence-container {
+    text-align: center; /* Center the text elements inside the container */
+    padding: 20px; /* Add some padding for spacing */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 800px; /* Set a maximum width for readability */
+}
+
+.confidence-container h2 {
+    font-size: 2.5rem; /* Adjust the font size of the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.confidence-container p {
+    font-size: 1.4rem; /* Adjust the font size of the paragraph */
+    line-height: 1.5; /* Increase the line spacing for readability */
+}
+
+.companies-container {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px; /* Add some padding to space out the content from the bottom line */
+    overflow: hidden;
+}
+
+.companies-container h5{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.company-logos {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logos-container {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.logos-wrapper {
+    overflow: hidden;
+}
+
+.logo-set {
+    display: inline-flex;
+    gap: 20px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* Common styles for all logos */
+.company-logo {
+    height: 35px; /* Set a fixed height for the images */
+    width: auto; /* Let the width adjust based on the original aspect ratio */
+    display: inline-block;
+    margin: 0 15px;
+    margin-bottom: 20px;
+}
+
+.green-box {
+    width: 80%; /* Set the width to 80% of the screen */
+    height: auto; /* Adjust the height to fit content */
+    padding: 15px; /* Add some padding for spacing */
+    background: #d2f0b6;
+    margin: 0 auto; /* Center the box horizontally */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+    color: white; /* Set the text color to white */
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.green-box h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.green-box button {
+    margin-top: 10px; /* Add some space above the button */
+}
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #000000;
+    background-color: cbe6c6;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+
+.speakgeek-info-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.speakgeek-info-container h2{
+    font-size: 1.5rem;
+}
+/* Default styles for larger screens */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.info-one, .info-two, .info-three {
+    flex: 1;
+    padding: 0 20px;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    font-size: 1.3em; /* Increase the font size */
+    margin-right: 20px; /* Add margin to the right */
+    height: 40vh;
+}
+
+.info-one h4, .info-two h4, .info-three h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Stack blocks vertically */
+        align-items: center; /* Center align blocks horizontally */
+    }
+    
+    .info-one,
+    .info-two,
+    .info-three {
+        width: 100%; /* Full width for smaller screens */
+        margin: 20px;
+    }
+}
+
+/* Remove the right margin for the last info div */
+/* .info-three {
+    margin-right: 0;
+} */
+
+.info-one {
+    background-color: #a8d5a0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-two {
+    background-color: #cbe6c6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-three {
+    background-color: #dceed9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.animate-slide-up {
+    transition: transform 2s ease-in-out;
+}
